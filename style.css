@@ -54,12 +54,12 @@ section{
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .main .content .columns-col-right .portfolio-image{
-    width: 150px;
-    height: 150px;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -71,13 +71,13 @@ section{
 }
 
 .animated-text h3{
-    color:#409fbf;
+    color:#ff9717;
     font-size: 2em;
     font-weight: 800;
     line-height: 70px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 'Arial Light';
+    font-family: 'Arial Light';
 }
 
 .animated-text h3:nth-child(1){
@@ -159,7 +159,7 @@ header .navigation a{
 }
 
 header .navigation a:hover{
-    color: #409fbf;
+    color: #ffad34;
 }
 
 body{
@@ -179,7 +179,7 @@ body{
     font-weight: 800;
     text-transform: uppercase;
     position: relative;
-    color: #409fbf;
+    color: #e57700;
     margin-bottom: 60px;
 }
 
@@ -190,7 +190,7 @@ body{
     left: 50%;
     width: 200px;
     height: 4px;
-    background: #409fbf;
+    background: #FFD580;
     transform: translateX(-50%);
 }
 
@@ -406,7 +406,7 @@ body{
 }
 
 .btn{
-    background-color: #409fbf;
+    background-color: #e57700;
     color: #fff;
     font-size: 1em;
     font-family: 'Arial Light';

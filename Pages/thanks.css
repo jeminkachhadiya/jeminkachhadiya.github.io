@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+    scroll-behavior: smooth;
+}
+section{
+    padding: 10px;
+    margin: 10px;
+}
+
+body{
+    height: 100%;
+    background:url("images/bkg3.png") no-repeat;
+    background-size: cover;
+    justify-content: center;
+    height: 98.8vh;
+}
+
+
+.message{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+.message h1{
+    font-family: 'Arial Light';
+    font-size: 3em;
+    color: #cecece;
+}
+.message h2{
+    font-family: 'Arial Light';
+    font-size: 2.5em;
+    color: #cecece;
+}
+
+header{
+    z-index: 999;
+    position: fixed;
+    background:rgb(0, 0, 0);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+header .brand{
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: "Arial Light";
+    color: #fff;
+    text-decoration: none;
+}
+
+header .menu-btn{
+    position: absolute;
+    background: url(images/home-icon.png)no-repeat;
+    background-size: 25px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.back{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    background-color: #409fbf;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Arial Light';
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 10px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin: 150px;
+}
+.btn:hover{
+    background: #324ab2
+}
+a:click{ 
+    border:none;
+    outline:none;
+    text-decoration:none;
+    color:inherit; 
+}
