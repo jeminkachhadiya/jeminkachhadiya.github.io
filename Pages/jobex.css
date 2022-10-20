@@ -20,7 +20,7 @@ section{
 
 .section-title{
     position: relative;
-    color: #409fbf;
+    color: #e57700;
     font-weight: 800;
     font-size: 1.5em;
     margin-bottom: 60px;
@@ -37,7 +37,7 @@ section{
     left: 50%;
     width: 200px;
     height: 4px;
-    background: #409fbf;
+    background: #FFD580;
     transform: translateX(-50%);
 }
 
@@ -153,7 +153,7 @@ body{
     margin-top: 25px;
 }
 .btn{
-    background-color: #409fbf;
+    background-color: #e57700;
     color: #fff;
     font-size: 1em;
     font-family: 'Arial Light';
