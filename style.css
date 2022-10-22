@@ -54,12 +54,12 @@ section{
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 45px;
 }
 
 .main .content .columns-col-right .portfolio-image{
-    width: 270px;
-    height: 270px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
     overflow: hidden;
 }
