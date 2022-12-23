@@ -5,11 +5,11 @@
     font-family: 'Arial Light';
     scroll-behavior: smooth;
 }
-a:click{ 
+a:click{
     border:none;
     outline:none;
     text-decoration:none;
-    color:inherit; 
+    color:inherit;
 }
 
 section{
