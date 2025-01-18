@@ -11,7 +11,7 @@ section{
     padding: 100px 100px;
 }
 
-.main{
+.main {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -19,17 +19,71 @@ section{
     align-items: center;
     background: url(images/bkg1.png) no-repeat;
     background-size: cover;
-    background-position: center top;
+    background-position: center;
 }
 
-.main .content{
+.main .content {
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 50px;
+}
+
+.main .content .columns-col-left {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.main .content .columns-col-right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .content .columns-col-right {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.main .content .columns-col-right .portfolio-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1020px) {
+    .main .content {
+        flex-direction: column;
+        padding: 50px 25px;
+    }
+    
+    .main .content .columns-col-left {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+    
+    .main .content .columns-col-right {
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .main .content .columns-col-right .portfolio-image {
+        position: relative;
+        width: 250px;
+        height: 250px;
+    }
 }
 
 .main .content h2{
@@ -41,27 +95,6 @@ section{
 .main .content h2 span{
     font-size: 2em;
     font-weight: 600;
-}
-
-.main .content .columns-col-left{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.main .content .columns-col-right{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-top: 45px;
-}
-
-.main .content .columns-col-right .portfolio-image{
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    overflow: hidden;
 }
 
 .animated-text{
