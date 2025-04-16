@@ -6,6 +6,11 @@
     scroll-behavior: smooth;
 }
 
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }  
+
 section{
     min-height: 100vhf;
     padding: 100px 100px;
@@ -358,54 +363,77 @@ body{
 
 @media (max-width: 768px) {
     .experience .content .card {
-        flex-direction: column; 
-        width: 90%; 
-        padding: 15px;
-        text-align: center;
+      flex-direction: column;
+      width: 95%;
+      padding: 15px;
+      text-align: center;
+      gap: 16px;
     }
-
     .experience .content .card .title,
     .experience .content .card .info {
-        width: 100%; 
-        text-align: center; 
-        margin-bottom: 15px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 12px;
     }
-}
+    .experience .content .card .icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 12px auto;
+    }
+    .experience .content .card .title {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 
 /* updated */
 .experience .content {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    width: 100%; 
-    margin: 0 auto; 
-}
-
-.experience .content .card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .experience .content .card {
     background: #cecece;
-    width: 80%; 
-    max-width: 1200px; 
-    margin: 20px auto; 
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
     padding: 20px;
-    display: flex; 
-    flex-direction: row; 
-    align-items: center; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     box-shadow: 0 5px 25px rgba(1, 1, 1, 0.1);
     border-radius: 10px;
-}
-
-.experience .content .card .title {
+    gap: 24px; /* Add gap for better separation */
+  }
+  
+  .experience .content .card .title {
     display: flex;
-    flex-direction: column; 
-    width: 40%; 
-}
-
-.experience .content .card .info {
-    width: 60%; 
-    text-align: left; 
-}
-
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 40%;
+    gap: 4px;
+  }
+  
+  .experience .content .card .info {
+    width: 60%;
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .experience .content .card .title,
+    .experience .content .card .info {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
 .experience .content .card .card-left {
     display: flex; 
     flex-direction: row; 
@@ -421,13 +449,34 @@ body{
     width: 80px;
     height: 80px;
     border-radius: 10px;
-}
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .experience .content .card .icon {
+      width: 60px;
+      height: 60px;
+    }
+  }  
 
-.experience .content .card .text h3,
-.experience .content .card .text h4,
-.experience .content .card .text h5 {
-    margin: 0; 
-}
+  .experience .content .card .title h3,
+  .experience .content .card .title h4,
+  .experience .content .card .title h5 {
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .experience .content .card .title h3,
+    .experience .content .card .title h4,
+    .experience .content .card .title h5 {
+      text-align: left !important;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+    }
+  }
 
 .experience .content .card .text h3 {
     font-size: 1.4em;
