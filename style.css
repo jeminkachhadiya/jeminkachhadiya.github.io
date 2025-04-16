@@ -365,37 +365,38 @@ body{
 @media (max-width: 768px) {
     .experience .content .card {
       flex-direction: column;
-      align-items: center;
-      width: 90%;
-      padding: 15px;
-      text-align: center;
+      padding: 20px 15px;
     }
-    .experience .content .card .title {
+  
+    .experience .content .card .card-left {
       flex-direction: column;
-      align-items: center;
       width: 100%;
-      margin-bottom: 10px;
       text-align: center;
     }
+  
     .experience .content .card .icon {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 10px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto 15px auto;
     }
-    .experience .content .card .text {
+  
+    .experience .content .card .title {
       width: 100%;
-      margin-bottom: 10px;
       text-align: center;
+      margin-bottom: 15px;
     }
+  
     .experience .content .card .info {
       width: 100%;
       text-align: left;
-      margin-top: 10px;
+      padding-top: 15px;
+      border-top: 1px solid #ddd;
     }
-  }
+    
+    .experience .content .card .title h3,
+    .experience .content .card .title h4 {
+      text-align: left !important;
+      width: 100%;
+    }
+  }  
 
 /* updated */
 .experience .content {
@@ -435,15 +436,6 @@ body{
     text-align: left;
   }
   
-  @media (max-width: 768px) {
-    .experience .content .card .title,
-    .experience .content .card .info {
-      width: 100%;
-      align-items: center;
-      text-align: center;
-    }
-  }
-  
 .experience .content .card .card-left {
     display: flex; 
     flex-direction: row; 
@@ -469,16 +461,6 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-  }
-  @media (max-width: 768px) {
-    .experience .content .card .title h3,
-    .experience .content .card .title h4,
-    .experience .content .card .title h5 {
-      text-align: left !important;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 100%;
-    }
   }
 
 .experience .content .card .text h3 {
