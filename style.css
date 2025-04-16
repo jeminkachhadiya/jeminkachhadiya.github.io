@@ -361,29 +361,39 @@ body{
     background-size: cover;
 }
 
+
 @media (max-width: 768px) {
     .experience .content .card {
       flex-direction: column;
-      width: 95%;
+      align-items: center;
+      width: 90%;
       padding: 15px;
       text-align: center;
-      gap: 16px;
     }
-    .experience .content .card .title,
-    .experience .content .card .info {
+    .experience .content .card .title {
+      flex-direction: column;
+      align-items: center;
       width: 100%;
+      margin-bottom: 10px;
       text-align: center;
-      margin-bottom: 12px;
     }
     .experience .content .card .icon {
       width: 60px;
       height: 60px;
-      margin: 0 auto 12px auto;
+      margin-bottom: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .experience .content .card .title {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    .experience .content .card .text {
+      width: 100%;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .experience .content .card .info {
+      width: 100%;
+      text-align: left;
+      margin-top: 10px;
     }
   }
 
@@ -451,13 +461,6 @@ body{
     border-radius: 10px;
     object-fit: cover;
   }
-  
-  @media (max-width: 768px) {
-    .experience .content .card .icon {
-      width: 60px;
-      height: 60px;
-    }
-  }  
 
   .experience .content .card .title h3,
   .experience .content .card .title h4,
