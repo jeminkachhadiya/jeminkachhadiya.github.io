@@ -361,174 +361,104 @@ body{
     background-size: cover;
 }
 
-/* Experience Card Mobile Fixes */
-@media (max-width: 768px) {
+/* Desktop view (default) */
+.experience .content .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .experience .content .card .icon {
+    width: 100px; /* Increased from 80px (3x) */
+    height: 100px; /* Increased from 80px (3x) */
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .experience .content .card a {
+    flex: 0 0 auto;
+    margin-right: 15px;
+  }
+  
+  .experience .content .card .title {
+    flex: 0 0 25%; /* Limit title to 25% of card width */
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .experience .content .card .info {
+    flex: 1; /* Let info take remaining space */
+    padding-left: 10px;
+  }
+    
+  /* Mobile view (≤768px) */
+  @media screen and (max-width: 768px) {
     .experience .content .card {
+      flex-direction: column !important;
+      align-items: center !important;
+      padding: 20px 15px !important;
+      width: 90% !important;
+      margin: 0 auto 20px auto !important;
+    }
+    
+    .experience .content .card a {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      justify-content: center;
       width: 100%;
-      max-width: 100%;
-      margin: 20px auto;
-      padding: 20px 15px;
-      box-sizing: border-box;
-    }
-  
-    .experience .content .card .icon {
-      width: 70px;
-      height: 70px;
-      margin: 0 auto 15px auto;
-      display: block;
-      border-radius: 10px;
-    }
-  
-    .experience .content .card .title {
-      width: 100%;
-      text-align: center;
       margin-bottom: 15px;
     }
-  
-    .experience .content .card .title h3 {
-      font-size: 1.3rem;
-      margin-bottom: 5px;
-      text-align: center;
-      width: 100%;
+    
+    .experience .content .card .icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto;
     }
-  
-    .experience .content .card .title h4,
-    .experience .content .card .title h5 {
-      font-size: 1rem;
-      margin: 3px 0;
-      text-align: center;
-      width: 100%;
+    
+    .experience .content .card .title {
+        flex: 0 0 auto;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        border-right: 1px solid #e0e0e0;
     }
-  
+    
     .experience .content .card .info {
       width: 100%;
       text-align: left;
       padding: 0;
     }
-  
+    
     .experience .content .card .info h4 {
-      text-align: center;
       margin-bottom: 10px;
-      font-size: 1.1rem;
     }
-  
+    
     .experience .content .card .info ul {
       padding-left: 20px;
       margin: 0;
     }
-  
-    .experience .content .card .info ul li {
-      margin-bottom: 8px;
-      line-height: 1.5;
-    }
-  }
-    
-/* updated */
-.experience .content {
+  }  
+
+    .see-more {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 0 auto;
+    margin: 20px 0;
   }
   
-  .experience .content .card {
-    background: #cecece;
-    width: 80%;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.1);
-    border-radius: 10px;
-    gap: 24px; /* Add gap for better separation */
-  }
-  
-  .experience .content .card .title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    width: 40%;
-    gap: 4px;
-  }
-  
-  .experience .content .card .info {
-    width: 60%;
-    text-align: left;
-  }
-  
-.experience .content .card .card-left {
-    display: flex; 
-    flex-direction: row; 
-    align-items: center; 
-    gap: 15px; 
-}
-
-.experience .content .card .card-icon {
-    flex-shrink: 0; 
-}
-
-.experience .content .card .icon {
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-
-  .experience .content .card .title h3,
-  .experience .content .card .title h4,
-  .experience .content .card .title h5 {
-    text-align: left;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-.experience .content .card .text h3 {
-    font-size: 1.4em;
-    font-weight: bold;
-}
-
-.experience .content .card-right {
-    flex-grow: 1;
-}
-
-.experience .content .card:hover .icon{
-    transform: translateY(-15px);
-}
-
-.experience .content .card .info {
-    flex-grow: 1; 
-    text-align: left; 
-}
 
 .title p{
     font-size: 1.2em;
     width: 75%;
     font-family: 'Arial Light';
     font-weight: 500;
-}
-
-.experience .content .card h3{
-    justify-content: center;
-    text-align: center;
-    font-size: 1.4em;
-    margin-top: 10px;
-}
-
-.experience .content .see-more {
-    position: relative;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 40px;
 }
 
 .btn {
