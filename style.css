@@ -423,9 +423,13 @@ body{
     }
     
     .experience .content .card .title {
-        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
+        margin-bottom: 12px;
         text-align: center;
+        flex: 0 0 auto;
         margin: 10px 0;
         border-right: 1px solid #e0e0e0;
     }
@@ -434,6 +438,16 @@ body{
       width: 100%;
       text-align: left;
       padding: 0;
+    }
+
+    .experience .content .card .title h3,
+    .experience .content .card .title h4,
+    .experience .content .card .title h5 {
+        margin: 2px 0;
+        width: 100%;
+        font-weight: 600;
+        word-break: break-word;
+        text-align: center;
     }
     
     .experience .content .card .info h4 {
