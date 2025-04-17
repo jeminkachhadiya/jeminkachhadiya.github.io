@@ -378,15 +378,15 @@ body{
       display: block;
     }
     .experience .content .card .title {
-      text-align: center;
+        text-align: center !important;
       margin-bottom: 12px;
     }
     .experience .content .card .info {
-      text-align: left;
+      text-align: center !important;
       margin-top: 10px;
       width: 100%;
     }
-    
+
     .experience .content .card .title h3,
     .experience .content .card .title h4 {
       text-align: center !important;
