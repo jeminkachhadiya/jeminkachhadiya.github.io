@@ -361,39 +361,35 @@ body{
     background-size: cover;
 }
 
-
 @media (max-width: 768px) {
     .experience .content .card {
-      flex-direction: column;
-      padding: 20px 15px;
+      display: flex;
+      flex-direction: column !important;
+      align-items: stretch !important;
+      width: 95vw;
+      margin: 0 auto 20px auto;
+      padding: 18px 8px;
+      box-sizing: border-box;
     }
-  
-    .experience .content .card .card-left {
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-    }
-  
     .experience .content .card .icon {
-      margin: 0 auto 15px auto;
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 12px auto;
+      display: block;
     }
-  
     .experience .content .card .title {
-      width: 100%;
       text-align: center;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
-  
     .experience .content .card .info {
-      width: 100%;
       text-align: left;
-      padding-top: 15px;
-      border-top: 1px solid #ddd;
+      margin-top: 10px;
+      width: 100%;
     }
     
     .experience .content .card .title h3,
     .experience .content .card .title h4 {
-      text-align: left !important;
+      text-align: center !important;
       width: 100%;
     }
   }  
